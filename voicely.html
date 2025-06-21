@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Voicely – AI Voice Reader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background"></div>
+
+  <div class="card">
+    <h1>🗣️ Voicely</h1>
+    <p class="tagline"> Speak Your Thoughts Instantly</p>
+
+    <textarea id="textInput" placeholder="Enter your text..."></textarea>
+
+    <div class="controls">
+      <div>
+        <label>Voice:</label>
+        <select id="voiceSelect"></select>
+      </div>
+      <div>
+        <label>Speed:</label>
+        <input type="range" id="rate" min="0.5" max="2" value="1" step="0.1">
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button onclick="speakText()">🔊 Speak</button>
+      <button onclick="pauseText()">⏸ Pause</button>
+      <button onclick="resumeText()">▶ Resume</button>
+      <button onclick="stopText()">⏹ Stop</button>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Speechify • Built with  by yachna
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
